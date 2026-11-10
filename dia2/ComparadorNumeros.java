@@ -8,13 +8,13 @@ public class ComparadorNumeros {public static void main(String[] args) {
     numero1 = teclado.nextDouble();
     System.out.println("Introduce el segundo número:");
     numero2 = teclado.nextDouble();
-    if (numero1 > numero2) {
-        System.out.println("El primer número es mayor que el segundo.");
-    } else if (numero1 < numero2) {
-        System.out.println("El segundo número es mayor que el primero.");
-    } else {
-        System.out.println("Los dos números son iguales.");
-    }
+   boolean numeromayor = (numero1 > numero2 );
+   boolean numeromenor = (numero1 < numero2 );
+   boolean numeroigual = (numero1 == numero2 );
+
+   System.out.println("El primer número es mayor que el segundo: " + numeromayor);
+   System.out.println("El primer número es menor que el segundo: " + numeromenor);
+   System.out.println("El primer número es igual que el segundo: " + numeroigual);
     teclado.close();
 }
     
