@@ -6,6 +6,10 @@ public class Rectangulo {
     private double base;
     private double altura;
 
+    public Rectangulo(double base) {
+        this.base = base;
+    }
+
     // 2. Constructor
     public Rectangulo(double base, double altura) {
         this.base = base;

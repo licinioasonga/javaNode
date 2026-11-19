@@ -1,39 +1,30 @@
+
 package dia7;
 
-
-import java.util.Scanner;
-
-
 public class PrincipalPelicula {
+
     public static void main(String[] args) {
-        
-        Scanner teclado = new Scanner(System.in);
-        Pelicula[] cartelera={
 
-        
+        // Creamos dos películas
+        Pelicula pelicula1 = new Pelicula("Avatar", 162, 12);
 
-        new Pelicula(null, 0, 0);
-        new Pelicula(ET, 120, 0);
-        new Pelicula(Coco, 105, 0);
-        new Pelicula(Alien, 115, 18);
-    };
+        Pelicula pelicula2 = new Pelicula("Buscando a Nemo", 100);
 
-    
-    System.out.print("¿Que edad tienes?");
-    int edad = teclado.nextInt();
-    int disponibles=0;
-    System.out.println("\n----- CARTELERA ------");
+        // Mostramos sus fichas
+        pelicula1.mostrarFicha();
 
-    for (int i=0; i<cartelera.length; i++){
-        cartelera[i].mostrarFicha();
-        if (cartelera[i].puedever(edad)){
-        disponibles++;
+        pelicula2.mostrarFicha();
+
+        // Comprobamos si una persona puede ver la película
+        int edadPersona = 10;
+
+        System.out.println("\n¿Puede ver Avatar una persona de "
+                + edadPersona + " años?");
+
+        if (pelicula1.puedeVer(edadPersona)) {
+            System.out.println("Sí, puede verla.");
         } else {
-            System.out.println("No recomendada para tu edad");
-
+            System.out.println("No, no puede verla.");
         }
     }
-System.out.println("\nPeliculas que puedes ver: " + disponibles + "de"+cartelera.length);
-teclado.close();
-
 }
