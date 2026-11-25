@@ -1,0 +1,8 @@
+ACTA DE NOTAS
+------------------
+Nota 1: 7.5
+Nota 2: 8.0
+Nota 3: 6.5
+Nota 4: 9.0
+------------------
+Media del curso: 7.75
