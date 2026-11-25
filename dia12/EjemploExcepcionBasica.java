@@ -1,5 +1,5 @@
 
-package dia12;
+
 
 import java.util.Scanner;
 
